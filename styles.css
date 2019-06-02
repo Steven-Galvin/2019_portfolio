@@ -4,28 +4,92 @@ Filename: styles.css
 Date Modified: 05/30/19 */
 
 body {
-  background-color: #2186B5;
+  background-color: #fcfcfa;
+  margin: 0;
 }
 
-header {
-  width: 100%;
-  height: 6em;
-}
-
-header img {
-  width: inherit;
-  height: inherit;
-}
+/* Navigation Styles */
 
 nav {
   background-color: #FFBF70;
   height: 5em;
-  padding: 1em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
 }
+
+nav #navLogo {
+  width: 40px;
+  height: 40px;
+  border: 1px solid green;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul {
+  padding: 0;
+  width: 25em;
+  height: 3em;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0.8em;
+}
+
+nav a {
+  border: 2px solid #2186B5;
+  border-radius: 0.8em;
+  font-size: 110%;
+  text-decoration: none;
+  color: #2186B5;
+}
+
+nav a:visited {
+  color: #2186B5;
+}
+
+nav a:hover {
+  border: 2px solid #B89367;
+  color: #B89367;
+  transform: scale(1.05);
+  transition: border 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hero Image Styles */
+
+#heroImage {
+  height: 30em;
+  background-image: url("images/placeholder_header.jpg");
+}
+
+#heroImage h1 {
+  margin-top: 2em;
+  margin-left: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  display: inline-block;
+}
+
+#heroImage img {
+  height: inherit;
+  width: 100%;
+}
+
+/* Main Content Styles */
 
 main {
   padding: 1em;
 }
+
+/* Footer Styles */
 
 footer {
   background-color: #B89367;
@@ -34,12 +98,6 @@ footer {
   padding: 1em;
   align-items: center;
   justify-content: center;
-}
-
-#wrapper {
-  width: 90%;
-  margin: auto;
-  background-color: #CAEEFF;
 }
 
 #copyright {
