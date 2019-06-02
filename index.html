@@ -1,0 +1,85 @@
+<!-- Project: Online Portfolio
+Programmer: Steven Galvin
+Filename: index.html
+Date Modified: 05/30/19 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Welcome to my Portfolio</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="heroImage">
+
+    </div>
+
+    <main>
+      <h1>Please excuse me while I construct this site</h1>
+
+      <div id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Ruby on Rails</li>
+          <li>Gimp</li>
+          <li>InkScape</li>
+        </ul>
+      </div>
+
+      <div id="projects">
+        <h2>Projects</h2>
+        <dl>
+          <dt><a href="colorapp/index.html">Color App</a></dt>
+          <dd>Some backstory for this app; my phone contact photos are all random, solid colors and at first I did that by finding images of colors that contained multiple shades so I could simply zoom in on different sections of the picture to get the effect I wanted. I discovered though that with updates to my OS, the images would revert back to displaying the full size and it ruined the aesthetic I was going for. I looked for websites online to help me randomly generate colors that could be saved as images but I had no luck. That being the case, I decided to build it myself. I created my HSV slider as a means to understand the HSV model better since I found it allowed me more versatility than the RGB model did for my Random Colors app. Now I have an app that allows the user to select how many colors to generate as well as convert them into individual canvases that can be saved as images. I have begun adding functionality to filter the colors generated into red's, blue's, and green's, though further refinement is necessary.</dd>
+          <br>
+          <dt>Travel Log(work in progress)</dt>
+          <dd>Shortly after buying a new car, I had an idea; I wanted a web app I could use to log my miles driven, the day those miles were driven, and whether they were personal or work related miles. It's a fairly basic app, but one that I decided to build myself for fun rather than use something else online or simply keep a physical notebook.</dd>
+        </dl>
+      </div>
+
+      <div id="contact">
+        <h2>Let's Get in Contact!</h2>
+        <form action="index.html" method="post">
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName">
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="comments">Comments:</label>
+          <br>
+          <textarea name="comments" rows="8" cols="80" id="comment"></textarea>
+          <br>
+          <input type="submit" name="submit" value="Send Message">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <span id="copyright">Copyright &copy; 2019 Steven Galvin</span>
+    </footer>
+  </div>
+</body>
+
+</html>

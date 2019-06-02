@@ -1,0 +1,48 @@
+/* Project: Online Portfolio
+Programmer: Steven Galvin
+Filename: styles.css
+Date Modified: 05/30/19 */
+
+body {
+  background-color: #2186B5;
+}
+
+header {
+  width: 100%;
+  height: 6em;
+}
+
+header img {
+  width: inherit;
+  height: inherit;
+}
+
+nav {
+  background-color: #FFBF70;
+  height: 5em;
+  padding: 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+footer {
+  background-color: #B89367;
+  display: flex;
+  height: 3em;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #CAEEFF;
+}
+
+#copyright {
+  font-size: 0.9em;
+  font-style: italic;
+}
