@@ -16,7 +16,7 @@ Date Modified: 05/30/19 -->
   <div id="wrapper">
     <nav>
       <div id="navLogo">
-
+        <a href="index.html"><img src="images/logo_v1.png" alt="Steven Galvin's Logo"></a>
       </div>
       <ul>
         <a href="#about"><li>About</li></a>
@@ -27,7 +27,7 @@ Date Modified: 05/30/19 -->
 
     <div id="heroImage">
       <h1>var Steven = "Web Developer"</h1>
-      <!-- <img src="images/placeholder_header.jpg" alt="Placeholder Hero Image"> -->
+      <!-- <img src="images/hero_placeholder.jpg" alt="Placeholder Hero Image"> -->
     </div>
 
     <main>
@@ -53,8 +53,8 @@ Date Modified: 05/30/19 -->
       <div id="projects">
         <h2>Projects</h2>
         <dl>
-          <dt><a href="colorapp/index.html">Color App</a></dt>
-          <dd>Some backstory for this app; my phone contact photos are all random, solid colors and at first I did that by finding images of colors that contained multiple shades so I could simply zoom in on different sections of the picture to get the effect I wanted. I discovered though that with updates to my OS, the images would revert back to displaying the full size and it ruined the aesthetic I was going for. I looked for websites online to help me randomly generate colors that could be saved as images but I had no luck. That being the case, I decided to build it myself. I created my HSV slider as a means to understand the HSV model better since I found it allowed me more versatility than the RGB model did for my Random Colors app. Now I have an app that allows the user to select how many colors to generate as well as convert them into individual canvases that can be saved as images. I have begun adding functionality to filter the colors generated into red's, blue's, and green's, though further refinement is necessary.</dd>
+          <dt><a href="colorapp/random_color_generator.html">Color App</a></dt>
+          <dd>Some backstory for this app; my phone contact photos are all random, solid colors and at first I did that by finding images of colors that contained multiple shades so I could simply zoom in on different sections of the picture to get the effect I wanted. I discovered though that with updates to my OS, the images would revert back to displaying the full size and it ruined the aesthetic I was going for. I looked for websites online to help me randomly generate colors that could be saved as images but I had no luck. That being the case, I decided to build it myself. I created my HSV Playground as a means to understand the HSV model better since I found it allowed me more versatility than the RGB model did for my Random Colors app. Now I have an app that allows the user to select how many colors to generate as well as convert them into individual canvases that can be saved as images. I have begun adding functionality to filter the colors generated into red's, blue's, and green's, though further refinement is necessary.</dd>
           <br>
           <dt>Travel Log(work in progress)</dt>
           <dd>Shortly after buying a new car, I had an idea; I wanted a web app I could use to log my miles driven, the day those miles were driven, and whether they were personal or work related miles. It's a fairly basic app, but one that I decided to build myself for fun rather than use something else online or simply keep a physical notebook.</dd>
@@ -64,17 +64,9 @@ Date Modified: 05/30/19 -->
       <div id="contact">
         <h2>Let's Get in Contact!</h2>
         <form action="index.html" method="post">
-          <label for="firstName">First Name:</label>
-          <input type="text" name="firstName" id="firstName">
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="lastName" id="lastName">
-          <br>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email">
-          <br>
-          <label for="comments">Comments:</label>
-          <br>
-          <textarea name="comments" rows="8" cols="80" id="comment"></textarea>
+          <input type="text" name="name" id="name" placeholder="Your name"><br>
+          <input type="email" name="email" id="email" placeholder="Your e-mail"><br>
+          <textarea name="comments" rows="8" cols="80" id="comment" placeholder="Let's connect!"></textarea>
           <br>
           <input type="submit" name="submit" value="Send Message">
         </form>

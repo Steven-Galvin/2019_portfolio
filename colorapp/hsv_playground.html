@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles.css">
+  <meta charset="utf-8">
+  <title>Steven Galvin: HSV Playground</title>
+</head>
+
+<body>
+  <nav>
+    <div id="navLogo">
+      <a href="../index.html"><img src="../images/logo_v1.png" alt="Steven Galvin's Logo"></a>
+    </div>
+    <ul>
+      <a href="../index.html#about"><li>About</li></a>
+      <a href="../index.html#projects"><li>Projects</li></a>
+      <a href="../index.html#contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+  <header id="header">
+    <h1>HSV Playground</h1>
+    <a href="random_color_generator.html">Check out my Random Color Generator</a>
+  </header>
+  <input type="checkbox" id="classicHSV">Classic HSV
+  <input type="range" min="1" max="15" value="15" step="1" class="stepSlider" id="stepCount">
+  <p>Steps: <span id="stepValue"></span></p>
+  <hr>
+  <div class="slidecontainer">
+    <input type="range" min="0" max="1" class="slider" id="hue">
+    <p>Hue: <span id="hueValue"></span></p>
+    <input type="range" min="0" max="1" class="slider" id="saturation">
+    <p>Saturation: <span id="satValue"></span></p>
+    <input type="range" min="0" max="1" class="slider" id="brightness">
+    <p>Brightness: <span id="briValue"></span></p>
+  </div>
+  <hr />
+  <div id='color'>
+    <label id='RGBValues'></label>
+    <br />
+    <label id='HSVValues'></label>
+  </div>
+</body>
+
+</html>

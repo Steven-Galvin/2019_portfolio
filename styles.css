@@ -3,78 +3,81 @@ Programmer: Steven Galvin
 Filename: styles.css
 Date Modified: 05/30/19 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora&display=swap');
+
 body {
-  background-color: #fcfcfa;
+  /* background-color: #fcfcfa; */
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #2f2f2f;
 }
 
 /* Navigation Styles */
 
 nav {
-  background-color: #FFBF70;
+  background-color: #fff4e6;
   height: 5em;
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav #navLogo {
-  width: 40px;
-  height: 40px;
-  border: 1px solid green;
+  width: 60px;
+  height: 60px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+nav a, nav img {
+  height: inherit;
 }
 
 nav ul {
-  padding: 0;
-  width: 25em;
-  height: 3em;
-  align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0;
 }
 
 nav ul li {
-  display: inline-block;
   list-style: none;
-  margin: 0;
-  padding: 0.8em;
+  padding-left: 2.5em;
 }
 
 nav a {
-  border: 2px solid #2186B5;
-  border-radius: 0.8em;
-  font-size: 110%;
+  font-size: 120%;
   text-decoration: none;
-  color: #2186B5;
+  color: #2f2f2f;
 }
 
 nav a:visited {
-  color: #2186B5;
+  color: #2f2f2f;
 }
 
 nav a:hover {
-  border: 2px solid #B89367;
-  color: #B89367;
+  color: #4c4c4c;
   transform: scale(1.05);
-  transition: border 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: border 0.13s ease-in-out, color 0.13s ease-in-out, transform 0.13s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
 }
 
 /* Hero Image Styles */
 
 #heroImage {
   height: 30em;
-  background-image: url("images/placeholder_header.jpg");
+  background-image: url("images/hero_placeholder.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #heroImage h1 {
   margin-top: 2em;
   margin-left: 2em;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
   display: inline-block;
 }
 
