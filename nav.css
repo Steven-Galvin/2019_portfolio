@@ -1,0 +1,66 @@
+/* Project: Online Portfolio
+Programmer: Steven Galvin
+Filename: nav.css
+Date Modified: 06/05/19 */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora&display=swap');
+
+body {
+  /* background-color: #fcfcfa; */
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #2f2f2f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+/* Navigation Styles */
+
+nav {
+  background-color: #fcfcfa;
+  height: 5em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #navLogo {
+  width: 60px;
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav a, nav img {
+  height: inherit;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding-left: 2.5em;
+}
+
+nav a {
+  font-size: 120%;
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+nav a:visited {
+  color: #2f2f2f;
+}
+
+nav a:hover {
+  color: #4c4c4c;
+  transform: scale(1.05);
+  transition: border 0.13s ease-in-out, color 0.13s ease-in-out, transform 0.13s ease-in-out;
+}

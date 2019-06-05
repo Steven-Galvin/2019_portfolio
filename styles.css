@@ -12,55 +12,6 @@ body {
   color: #2f2f2f;
 }
 
-/* Navigation Styles */
-
-nav {
-  background-color: #fff4e6;
-  height: 5em;
-  padding: 0 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav #navLogo {
-  width: 60px;
-  height: 60px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-nav a, nav img {
-  height: inherit;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-}
-
-nav ul li {
-  list-style: none;
-  padding-left: 2.5em;
-}
-
-nav a {
-  font-size: 120%;
-  text-decoration: none;
-  color: #2f2f2f;
-}
-
-nav a:visited {
-  color: #2f2f2f;
-}
-
-nav a:hover {
-  color: #4c4c4c;
-  transform: scale(1.05);
-  transition: border 0.13s ease-in-out, color 0.13s ease-in-out, transform 0.13s ease-in-out;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
 }
@@ -90,6 +41,29 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
   padding: 1em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form Styles */
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input:nth-last-child(1) {
+  width: 10%;
+}
+
+input, textarea {
+  border: 1px solid #2f2f2f;
+  border-radius: 0.5em;
+  padding: 0.7em;
+  margin: 0.8em;
+  width: 40%;
 }
 
 /* Footer Styles */
