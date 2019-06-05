@@ -66,10 +66,16 @@ input, textarea {
   width: 40%;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #CAEEFF;
+  border-color: #2186B5;
+}
+
 /* Footer Styles */
 
 footer {
-  background-color: #B89367;
+  background-color: #FFBE70;
   display: flex;
   height: 3em;
   padding: 1em;

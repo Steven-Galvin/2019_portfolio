@@ -60,7 +60,7 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #4c4c4c;
+  color: #FFBE70;
   transform: scale(1.05);
   transition: border 0.13s ease-in-out, color 0.13s ease-in-out, transform 0.13s ease-in-out;
 }
