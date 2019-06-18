@@ -1,0 +1,414 @@
+/*
+Assignment Name: Project Update 3
+File Name: styles.css
+Date: 06/01/19
+Programmer: Steven Galvin
+ */
+
+* { box-sizing: border-box; }
+
+header, nav, main, footer { display: block; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #260B08, #452420, #260B08);
+}
+
+header {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #4B5F59, #6F7F7A);
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Navigation Menu Styles */
+
+nav {
+  background: #EFDD8D;
+  box-sizing: border-box;
+  width: 140px;
+  float: left;
+  height: 100%;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: #2A3A36;
+}
+
+nav a:link {
+  color: #2A3A36;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+  color: #EFDD8D;
+  transition: color 0.3s;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 2em 0.5em;
+  background: #f5f8f7;
+  border: 2px solid #2A3A36;
+  border-radius: 0.8em;
+}
+
+nav ul li:hover {
+  background-color: #2A3A36;
+  transform: scale(1.05);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+main {
+  background: #FBFEE1;
+  margin-left: 140px;
+  padding: 10px;
+  padding-bottom: 100px;
+}
+
+footer {
+  background: #4B5F59;
+  color: #FAF5DF;
+  height: 100px;
+  margin-left: 140px;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 87%;
+}
+
+footer p {
+  margin: 32px 0;
+}
+
+/* Misc Element Styles */
+
+h1 {
+  float: right;
+  margin: 10px 0;
+  padding: 0;
+  line-height: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+label {
+  width: 8em;
+  float: left;
+  display: block;
+  padding-right: 1em;
+}
+
+input, textarea, select {
+  display: block;
+  margin-bottom: 1em;
+  border: 1px solid #2A3A36;
+  border-radius: 0.2em;
+}
+
+.strong {
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+#wrapper {
+  background: #EFDD8D;
+  position: relative;
+  min-height: 100%;
+}
+
+/* Hero and Image Styles */
+
+#heroDesktop {
+  width: 100%;
+  height: auto;
+}
+
+#heroAbout {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+#heroTablet {
+  display: none;
+}
+
+#heroTourPhone {
+  display: none;
+}
+
+#heroAboutTablet {
+  display: none;
+}
+
+#tourSmall {
+  display: none;
+}
+
+#logo {
+  height: 100%;
+  float: left;
+}
+
+#logoSmartphone {
+  display: none;
+}
+
+/* Form Structure and Styles */
+
+#formContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#form {
+  width: 50%;
+}
+
+#form input, #form textarea {
+  width: 65%;
+}
+
+#form input:nth-last-of-type(1) {
+  border: none;
+  width: auto;
+  margin-bottom: 0;
+}
+
+#form p, h3:nth-of-type(1) {
+  margin-top: 0;
+}
+
+#bookTourImage {
+  width: 50%;
+  padding-left: 10px;
+}
+
+#bookTourImage img {
+  width: 100%;
+}
+
+#contactImage {
+  width: 50%;
+  padding-left: 10px;
+}
+
+#contactImage img {
+  width: 100%;
+  height: auto;
+}
+
+#footerContact {
+  text-align: left;
+  float: left;
+  margin: 8px 0;
+  padding-left: 10px;
+}
+
+#telMobile {
+  display: none;
+  color: #452420;
+}
+
+/* Tablet Media Query */
+@media only screen and (max-width: 1024px) {
+
+  nav {
+    background: #EFDD8D;
+    width: 100%;
+  }
+
+  nav a {
+    float: left;
+    width: 21%;
+    background: #f5f8f7;
+    margin: 0.5em;
+    border: 2px solid #2A3A36;
+    border-radius: 0.8em;
+  }
+
+  nav a:hover {
+    background-color: #2A3A36;
+    transition: background-color 0.3s;
+  }
+
+  nav ul li {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  nav ul li:hover {
+    transform: none;
+  }
+
+  main {
+    margin: 0;
+    font-size: 90%;
+  }
+
+  footer {
+    width: auto;
+    margin: 0;
+  }
+
+  #wrapper {
+    background-image: linear-gradient(to bottom, #EFDD8D, #faf4dc, #EFDD8D);
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  #h2Mobile {
+    margin-top: 116px;
+  }
+
+  #heroDesktop {
+    display: none;
+  }
+
+  #heroAbout {
+    margin-top: 10px;
+  }
+
+  #heroTablet, #heroTourPhone {
+    margin-top: 10px;
+    width: 100%;
+    height: 20em;
+    display: inline;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+
+/* Smartphone Media Querie */
+@media only all and (max-width: 768px) {
+
+  header {
+    height: 5em;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    background: #EFDD8D;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 1px solid #2A3A36;
+    float: none;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  nav ul li:hover {
+    background-color: #2A3A36;
+    transform: none;
+    transition: background-color 0.3s;
+  }
+
+  main {
+    padding-top: 273px;
+  }
+
+  h1 {
+    margin: 15px 0;
+    float: right;
+    line-height: 30px;
+    font-size: 1.2em;
+  }
+
+  footer {
+    font-size: 70%;
+  }
+
+  footer #telMobile {
+    color: #c3b3b2;
+  }
+
+  #h2Mobile {
+    margin-top: 10px;
+  }
+
+  #heroTourPhone {
+    display: none;
+  }
+
+  #heroAbout {
+    display: none;
+  }
+
+  #tourSmall {
+    display: inline;
+    float: right;
+    margin: 0 0 1em 1em;
+    height: 20em;
+    width: 20em;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #logoSmartphone {
+    display: inline;
+    float: left;
+    height: 60px;
+    width: 60px;
+  }
+
+  #form {
+    width: 100%;
+  }
+
+  #bookTourImage {
+    display: none;
+  }
+
+  #contactImage {
+    display: none;
+  }
+
+  #telDeskTab {
+    display: none;
+  }
+
+  #telMobile {
+    display: inline;
+  }
+}

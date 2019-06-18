@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Assignment Name: Project 3 Update
+File Name: template.html
+Date: 06/01/19
+Programmer: Steven Galvin -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPlayfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Portland Historical Tours: Book a Tour</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="index.html">
+        <img id="logo" src="images/logo.png" alt="Portland Historical Tours logo">
+        <img id="logoSmartphone" src="images/logo.png" alt="Smartphone Portland Historical Tours logo">
+      </a>
+      <h1>Portland Historical Tours</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="downtown_tour.html">Downtown Tour</a></li>
+        <li><a href="albina_tour.html">Albina Tour</a></li>
+        <li><a href="landmarks_tour.html">Landmarks Tour</a></li>
+        <li><a href="book_tour.html">Book a Tour</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 id="h2Mobile">Book a Tour</h2>
+      <p>The tours leave daily on the hour between the hours of 9:00 AM and 3:00 PM. The last tour leaves at 3:00 PM.</p>
+      <p>We accept cash, credit card. VISA and MasterCard but no American Express. No payment accepted online.</p>
+      <p>We offer online reservations. Pay in person when you show up for the tour. Arrive 30 minutes in advance to pay.</p>
+      <div id="formContainer">
+        <div id="form">
+          <p>Required information is marked with an asterisk (*).</p>
+          <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+            <label for="tourSelection">* Tour Type</label>
+            <select name="tourSelection" id="tourSelection" required>
+              <option value="">Select your desired tour</option>
+              <option value="albina_tour">Albina Tour</option>
+              <option value="downtown_tour">Downtown Tour</option>
+              <option value="landmarks_tour">Landmarks Tour</option>
+            </select>
+            <label for="firstName">* First Name:</label>
+            <input type="text" name="firstName" id="firstName" required>
+            <label for="lastName">* Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required>
+            <label for="email">* Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="tourDate">* Tour Date:</label>
+            <input type="date" name="tourDate" id="tourDate" required>
+            <label for="participants">* Participants:</label>
+            <input type="number" name="participants" id="participants" value="1" required>
+            <label for="sensitivities">List food sensitivities here:</label>
+            <textarea name="sensitivities" id="sensitivities" rows="4" cols="40"></textarea>
+            <label for="submit"> &nbsp;</label>
+            <input type="image" id="submit" src="images/signup.png" alt="Sign up for tour" onmouseover="this.src='images/signup_hover.png'" onmouseout="this.src='images/signup.png'">
+          </form>
+        </div>
+        <div id="bookTourImage">
+          <img src="images/portland_historic_tours.jpg" alt="Overview of Downtown Portland">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footerContact">Portland Historical Tours <br>
+      1200 NW Naito Parkway <br>
+      Portland, OR 97209 <br>
+      <a id="telMobile" href="tel: 503-555-1234">503-555-1234</a>
+      <span id="telDeskTab">503-555-1234</span></div>
+      <p>Copyright &copy; 2019 Portland Historical Tours</p>
+    </footer>
+  </div>
+</body>
+
+</html>

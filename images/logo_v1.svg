@@ -38,7 +38,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.51134961"
-     inkscape:cx="567.9662"
+     inkscape:cx="513.20914"
      inkscape:cy="639.48421"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -66,48 +66,53 @@
      id="layer1"
      style="filter:url(#filter8826)">
     <g
-       id="g8776"
-       transform="translate(9.7349455,46.489584)">
-      <text
-         transform="rotate(0.48334028)"
-         sodipodi:linespacing="125%"
-         id="text8760"
-         y="127.10046"
-         x="38.156994"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.19444275px;line-height:125%;font-family:'Hiragino Maru Gothic ProN';-inkscape-font-specification:'Hiragino Maru Gothic ProN, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="127.10046"
+       id="g8851"
+       inkscape:export-xdpi="35.486599"
+       inkscape:export-ydpi="35.486599">
+      <g
+         transform="translate(9.7349455,46.489584)"
+         id="g8776">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.19444275px;line-height:125%;font-family:'Hiragino Maru Gothic ProN';-inkscape-font-specification:'Hiragino Maru Gothic ProN, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="38.156994"
-           id="tspan8770"
-           sodipodi:role="line">S</tspan></text>
-      <text
-         transform="rotate(-0.4633569)"
-         sodipodi:linespacing="125%"
-         id="text8764"
-         y="144.78145"
-         x="86.841949"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.19444275px;line-height:125%;font-family:'Hiragino Maru Gothic ProN';-inkscape-font-specification:'Hiragino Maru Gothic ProN, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="144.78145"
+           y="127.10046"
+           id="text8760"
+           sodipodi:linespacing="125%"
+           transform="rotate(0.48334028)"><tspan
+             sodipodi:role="line"
+             id="tspan8770"
+             x="38.156994"
+             y="127.10046">S</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.19444275px;line-height:125%;font-family:'Hiragino Maru Gothic ProN';-inkscape-font-specification:'Hiragino Maru Gothic ProN, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="86.841949"
-           id="tspan8768"
-           sodipodi:role="line">G</tspan></text>
+           y="144.78145"
+           id="text8764"
+           sodipodi:linespacing="125%"
+           transform="rotate(-0.4633569)"><tspan
+             sodipodi:role="line"
+             id="tspan8768"
+             x="86.841949"
+             y="144.78145">G</tspan></text>
+      </g>
+      <rect
+         ry="80.976479"
+         y="67.523521"
+         x="24.023521"
+         height="161.95296"
+         width="161.95296"
+         id="rect8774"
+         style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:2.99999976;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect8830"
+         width="148.85298"
+         height="148.85298"
+         x="30.573509"
+         y="74.073509"
+         ry="74.426491" />
     </g>
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect8774"
-       width="161.95296"
-       height="161.95296"
-       x="24.023521"
-       y="67.523521"
-       ry="80.976479" />
-    <rect
-       ry="74.426491"
-       y="74.073509"
-       x="30.573509"
-       height="148.85298"
-       width="148.85298"
-       id="rect8830"
-       style="opacity:1;fill:#ffffff;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:2.99999976;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

@@ -10,9 +10,10 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #2f2f2f;
+  line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, dt {
   font-family: 'Lora', serif;
 }
 
@@ -26,10 +27,14 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
 }
 
-#heroImage h1 {
-  margin-top: 2em;
-  margin-left: 2em;
-  display: inline-block;
+#heroImageHeader {
+  width: 80%;
+  margin: auto;
+  padding-top: 2em;
+}
+
+#heroImageHeader h1 {
+  margin: 0;
 }
 
 #heroImage img {
@@ -44,6 +49,53 @@ main {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* About Sections Styles */
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+#about {
+  width: 60%;
+  padding: 0 10px;
+}
+
+#skills h4 {
+  margin: 0;
+}
+
+#skills ul {
+  padding-left: 0;
+}
+
+#skills li {
+  list-style: none;
+}
+
+#skillsFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+#coding {
+  width: 50%;
+}
+
+#tools {
+  width: 50%;
+}
+
+#profile_picture {
+  padding: 10px;
+  width: 40%;
+}
+
+#profile_picture img {
+  width: 100%;
+  height: inherit;
 }
 
 /* Form Styles */
@@ -75,7 +127,7 @@ input:focus, textarea:focus {
 /* Footer Styles */
 
 footer {
-  background-color: #FFBE70;
+  background-color: #FFD7A6;
   display: flex;
   height: 3em;
   padding: 1em;
