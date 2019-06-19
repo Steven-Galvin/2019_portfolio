@@ -1,0 +1,31 @@
+/* Project: Online Portfolio
+Programmer: Steven Galvin
+Filename: landing_page.css
+Date Modified: 06/18/19 */
+
+/* Main Content Styles */
+
+body {
+  background-image: url("../images/hero_placeholder.jpg");
+  background-position: center;
+}
+
+main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.link {
+  padding: 10px;
+  color: #fcfcfa;
+  font-size: 1.3em;
+  width: 50%;
+  border: 3px solid #2f2f2f;
+  background: #4D2f2f2f;
+}

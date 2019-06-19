@@ -51,14 +51,14 @@ main {
   margin-right: auto;
 }
 
-/* About Sections Styles */
+/* About Section Styles */
 
-.about {
+#about {
   display: flex;
   flex-direction: row;
 }
 
-#about {
+#description {
   width: 60%;
   padding: 0 10px;
 }
@@ -75,7 +75,7 @@ main {
   list-style: none;
 }
 
-#skillsFlex {
+#skillsFlexContainer {
   display: flex;
   flex-direction: row;
 }
@@ -96,6 +96,20 @@ main {
 #profile_picture img {
   width: 100%;
   height: inherit;
+}
+
+/* Project Section Styles */
+
+#projects a {
+  color: #008080;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#projects a:hover {
+  color: #004d4d;
+  transform: scale(1.03);
+  transition: color 0.12s ease-in-out, transform 0.12s ease-in-out;
 }
 
 /* Form Styles */
@@ -120,8 +134,8 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 10px #CAEEFF;
-  border-color: #2186B5;
+  box-shadow: 0 0 10px #008080;
+  border-color: #004d4d;
 }
 
 /* Footer Styles */
