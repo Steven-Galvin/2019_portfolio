@@ -1,7 +1,7 @@
 /* Project: Online Portfolio
 Programmer: Steven Galvin
-Filename: landing_page.css
-Date Modified: 06/18/19 */
+Filename: jay_kalsifer.css
+Date Modified: 06/20/19 */
 
 /* Main Content Styles */
 
@@ -21,11 +21,30 @@ main {
   height: 100%;
 }
 
+#selfie {
+  width: 10em;
+  height: 10em;
+  background-image: url("../images/selfie.jpg");
+  border: 2px solid #2f2f2f;
+  border-radius: 100%;
+  background-position: top;
+  background-size: cover;
+}
+
 .link {
+  text-decoration: none;
   padding: 10px;
   color: #fcfcfa;
   font-size: 1.3em;
   width: 50%;
   border: 3px solid #2f2f2f;
-  background: #4D2f2f2f;
+  background: #2f2f2f4d;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.link:hover {
+  background: #fcfcfa4d;
+  color: #2f2f2f;
+  border: 3px solid #fcfcfa;
 }
