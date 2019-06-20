@@ -10,6 +10,7 @@ body {
   background-image: url("../images/jay_kalsifer_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 main {
@@ -59,4 +60,34 @@ main {
   background: #fcfcfa4d;
   color: #2f2f2f;
   border: 3px solid #fcfcfa;
+}
+
+/* Tablet Media Query */
+/* @media only screen and (max-width: 1024px) {
+  body {
+    background-size: auto 100vh;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+ */
+/* Smartphone Media Querie */
+@media only all and (max-width: 768px) {
+  body {
+    background-size: auto 100vh;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .link {
+    width: 80%;
+  }
 }
