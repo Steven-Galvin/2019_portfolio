@@ -6,11 +6,11 @@ Date Modified: 06/20/19 */
 /* Main Content Styles */
 
 body {
-  background-color: #2f2f2f;
+  /* background-color: #2f2f2f;
   background-image: url("../images/jay_kalsifer_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 main {
@@ -72,6 +72,15 @@ main {
 
 #mobile_links {
   display: none;
+}
+
+#wrapper {
+  background-color: #2f2f2f;
+  background-image: url("../images/jay_kalsifer_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
 }
 
 /* Tablet Media Query */
