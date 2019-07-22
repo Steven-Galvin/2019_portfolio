@@ -25,7 +25,7 @@
 			<?php else: ?>
 				<h2 class="post-title"><?php echo $post['title']; ?></h2>
 				<div class="post-body-div">
-					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_image" alt="">
+					<img src="<?php echo BASE_URL . 'static/images/' . $post['image']; ?>" class="post_banner" alt="">
 					<?php echo html_entity_decode($post['body']); ?>
 				</div>
 			<?php endif ?>
