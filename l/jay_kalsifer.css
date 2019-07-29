@@ -1,7 +1,7 @@
-/* Project: Online Portfolio
+/* Project: Personal Music
 Programmer: Steven Galvin
 Filename: jay_kalsifer.css
-Date Modified: 06/20/19 */
+Date Modified: 07/29/19 */
 
 /* Main Content Styles */
 
@@ -20,8 +20,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: space-around;
+  height: 100vh;
 }
 
 #username h1 {
@@ -32,6 +32,16 @@ main {
     0.5px -0.5px 0 #fcfcfacc,
     -0.5px 0.5px 0 #fcfcfacc,
      0.5px 0.5px 0 #fcfcfacc;
+}
+
+h2 {
+  color: #fcfcfa;
+  font-size: 1.3em;
+  text-shadow:
+   -0.5px -0.5px 0 #2f2f2fcc,
+    0.5px -0.5px 0 #2f2f2fcc,
+    -0.5px 0.5px 0 #2f2f2fcc,
+     0.5px 0.5px 0 #2f2f2fcc;
 }
 
 #selfie {
@@ -54,6 +64,10 @@ main {
   background: #2f2f2f4d;
   margin-top: 2em;
   text-align: center;
+}
+
+.link:first-child {
+  margin-top: 0;
 }
 
 .link:hover {
