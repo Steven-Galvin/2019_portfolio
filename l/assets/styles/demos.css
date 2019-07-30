@@ -1,0 +1,23 @@
+/* Project: Personal Music
+Programmer: Steven Galvin
+Filename: demos.css
+Date Modified: 07/29/19 */
+
+/* Demo Page Styles */
+
+main {
+  display: flex;
+  height: auto;
+}
+
+.beats {
+  width: 70%;
+}
+
+audio {
+  width: 100%;
+}
+
+#wrapper {
+  height: auto;
+}
