@@ -11,13 +11,16 @@ nav {
 }
 
 .nav-item {
-  border: 1px solid @nav-accent;
-  padding: 1.5em;
-  a {
-    color: @nav-accent;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.3em;
-    font-family: sans-serif;
+  display: inline-block;
+  padding: 5px;
+  color: @nav-accent;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-family: sans-serif;
+  &:hover {
+    border-bottom: 3px solid @nav-accent;
+    border-radius: 0.23em;
   }
 }
