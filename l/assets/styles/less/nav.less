@@ -1,0 +1,23 @@
+// main: styles.less
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: @nav-main;
+  border-bottom: 3px solid @nav-accent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  border: 1px solid @nav-accent;
+  padding: 1.5em;
+  a {
+    color: @nav-accent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: sans-serif;
+  }
+}
