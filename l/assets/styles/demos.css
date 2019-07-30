@@ -5,19 +5,57 @@ Date Modified: 07/29/19 */
 
 /* Demo Page Styles */
 
+
 main {
   display: flex;
-  height: auto;
-}
-
-.beats {
-  width: 70%;
-}
-
-audio {
-  width: 100%;
+  height: 100vh;
 }
 
 #wrapper {
   height: auto;
+  background-image: none;
+}
+
+/* Audio Container Styles */
+
+#list-screen {
+  display: none;
+}
+
+.audio-container {
+  width: 700px;
+  height: 500px;
+  border: 5px solid #191919;
+  background-color: #191919cc;
+  color: white;
+}
+
+.song {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  margin-top: 10px;
+}
+
+.song:first-child {
+  margin-top: 0;
+}
+
+.song:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+#list-screen-footer {
+  border: 1px solid pink;
+  padding: 10px;
+  height: 20px;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+#list-screen-meta-container {
+  display: flex;
 }

@@ -6,26 +6,157 @@ Date Modified: 07/29/19 -->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/logo_v1.png">
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
-    <link rel="stylesheet" href="../assets/styles/main.css">
-    <link rel="stylesheet" href="../assets/styles/demos.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@{{v5.0.2}}/dist/amplitude.js"></script>
-    <title>Demo Beats</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/logo_v1.png">
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/demos.css">
 
-  <div id="wrapper">
-    <body>
-      <main>
-        <h1>In Progress</h1>
-        <div class="audio-container">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js"></script>
+  <script type="text/javascript" src="../assets/scripts/amplitude/initialize.js"></script>
+  <script type="text/javascript" src="../assets/scripts/amplitude/functions.js"></script>
+
+  <title>Demo Beats</title>
+</head>
+
+<div id="wrapper">
+
+  <body>
+    <main>
+      <h1>In Progress</h1>
+
+      <!-- Audio Player Container -->
+
+      <div class="audio-container" id="test">
+        <div id="list-screen" class="slide-in-top">
+          <div id="list-screen-header" class="hide-playlist">
+            <img id="up-arrow" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/up.svg" />
+            Hide Playlist
+          </div>
+
+          <!-- List of Playlist Songs -->
+
+          <div id="list">
+            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+              <span class="song-number-now-playing">
+                <span class="number">
+                  1
+                </span>
+                <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" alt="Now Playing" />
+              </span>
+              <div class="song-meta-container">
+                <span class="name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
+                <span class="song-artist-album">
+                  <span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span>
+                </span>
+              </div>
+              <span class="song-duration">NF Duration</span>
+            </div>
+
+            <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+              <span class="song-number-now-playing">
+                <span class="number">
+                  2
+                </span>
+                <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" alt="Now Playing" />
+              </span>
+              <div class="song-meta-container">
+                <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
+                <span class="song-artist-album">
+                  <span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span>
+                </span>
+              </div>
+              <span class="song-duration">Intro Duration</span>
+            </div>
+          </div>
+
+          <!-- List Footer -->
+
+          <div id="list-screen-footer">
+            <div id="list-screen-meta-container">
+              <span data-amplitude-song-info="name" class="song-name"></span>
+
+              <div class="song-artist-album">
+                <span data-amplitude-song-info="artist"></span>
+              </div>
+            </div>
+            <div class="list-controls">
+              <div class="list-previous amplitude-prev"></div>
+              <div class="list-play-pause amplitude-play-pause"></div>
+              <div class="list-next amplitude-next"></div>
+            </div>
+          </div>
+
+          <!-- //List Footer// -->
 
         </div>
 
-      </main>
-    </body>
-  </div>
+        <!-- //List of Playlist Songs// -->
+
+        <!-- Play Screen -->
+
+        <div id="player-screen">
+          <div class="player-header down-header">
+            <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg" />
+            Show Playlist
+          </div>
+          <div id="player-top">
+            <img data-amplitude-song-info="cover_art_url" />
+          </div>
+          <div id="player-progress-bar-container">
+            <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+            <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+          </div>
+
+          <div id="player-middle">
+            <div id="time-container">
+              <span class="amplitude-current-time time-container"></span>
+              <span class="amplitude-duration-time time-container"></span>
+            </div>
+            <div id="meta-container">
+              <span data-amplitude-song-info="name" class="song-name"></span>
+
+              <div class="song-artist-album">
+                <span data-amplitude-song-info="artist"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="player-bottom">
+          <div id="control-container">
+
+            <div id="shuffle-container">
+              <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+            </div>
+
+            <div id="prev-container">
+              <div class="amplitude-prev" id="previous"></div>
+            </div>
+
+            <div id="play-pause-container">
+              <div class="amplitude-play-pause" id="play-pause"></div>
+            </div>
+
+            <div id="next-container">
+              <div class="amplitude-next" id="next"></div>
+            </div>
+
+            <div id="repeat-container">
+              <div class="amplitude-repeat" id="repeat"></div>
+            </div>
+
+          </div>
+
+          <div id="volume-container">
+            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/volume.svg" /><input type="range" class="amplitude-volume-slider" step=".1" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</div>
+
 </html>
