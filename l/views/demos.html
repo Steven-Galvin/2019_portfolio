@@ -11,17 +11,28 @@ Date Modified: 07/29/19 -->
 
   <!-- Include font -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/styles/demos.css">
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="stylesheet" media='screen and (max-width: 1024px)' href="../assets/styles/demos.css">
+  <link rel="stylesheet" media='screen and (min-width: 1024px)' href="../assets/styles/demos_desktop.css">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js"></script>
 </head>
 
 <body>
+  <nav>
+    <h1>Beats and Demos</h1>
+    <div id="select-playlist-menu">
+      <img id="hamburger-menu" src="../assets/images/menu.svg">
+    </div>
+  </nav>
   <div id="flat-black-player-container">
     <div id="list-screen" class="slide-in-top">
       <div id="list-screen-header" class="hide-playlist">
         <img id="up-arrow" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/up.svg" />
-        Hide Playlist
+        <h2>Hide Playlist</h2>
+        <div id="list-screen-flex">
+
+        </div>
       </div>
 
       <div id="list">
@@ -141,16 +152,20 @@ Date Modified: 07/29/19 -->
           </div>
         </div>
         <div class="list-controls">
-          <div class="list-previous amplitude-prev"></div>
+          <div class="list-previous amplitude-prev">
+            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/small-previous.svg" alt="Previous Song">
+          </div>
           <div class="list-play-pause amplitude-play-pause"></div>
-          <div class="list-next amplitude-next"></div>
+          <div class="list-next amplitude-next">
+            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/small-next.svg" alt="Next Song">
+          </div>
         </div>
       </div>
     </div>
     <div id="player-screen">
       <div class="player-header down-header">
         <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg" />
-        Show Playlist
+        <h2>Show Playlist</h2>
       </div>
       <div id="player-top">
         <img data-amplitude-song-info="cover_art_url" />
