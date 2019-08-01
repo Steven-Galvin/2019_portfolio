@@ -361,6 +361,7 @@ div#player-bottom div#control-container {
     padding-bottom: 40px;
 }
 
+/* Shuffle Styles */
 div#player-bottom div#control-container div#shuffle-container {
     float: left;
     width: 20%;
@@ -394,6 +395,7 @@ div#player-bottom div#control-container div#shuffle-container div#shuffle.amplit
     opacity: 1;
 }
 
+/* Previous Styles */
 div#player-bottom div#control-container div#prev-container {
     width: 20%;
     float: left;
@@ -413,6 +415,7 @@ div#player-bottom div#control-container div#prev-container div#previous:hover {
     background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/previous-hover.svg");
 }
 
+/* Pause/Play Styles */
 div#player-bottom div#control-container div#play-pause-container {
     width: 20%;
     float: left;
@@ -434,6 +437,7 @@ div#player-bottom div#control-container div#play-pause-container div#play-pause.
     background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/play.svg");
 }
 
+/* Next Styles */
 div#player-bottom div#control-container div#next-container {
     width: 20%;
     float: left;
@@ -453,6 +457,7 @@ div#player-bottom div#control-container div#next-container div#next:hover {
     background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/next-hover.svg");
 }
 
+/* Repeat Styles */
 div#player-bottom div#control-container div#repeat-container {
     float: left;
     width: 20%;

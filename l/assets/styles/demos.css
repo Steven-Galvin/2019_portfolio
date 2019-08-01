@@ -2,11 +2,6 @@
 Programmer: Steven Galvin
 Filename: demos.css
 Date Modified: 07/29/19 */
-/* REMOVE CODE ONLY TEMPORARY */
-#player-top img {
-    display: none;
-}
-
 /* MOBILE STYLES */
 html, body, #flat-black-player-container {
     width: 100%;
@@ -39,7 +34,7 @@ nav h1 {
 /* List Container Styles */
 #list-screen {
     background-color: #141920;
-    /* display: none; */
+    display: none;
     color: #fff;
 }
 
@@ -66,7 +61,7 @@ nav h1 {
     width: 2.3em;
 }
 
-#list-screen-header #list-screen-flex {
+#list-screen-header #list-header-empty-flex {
     height: 2.3em;
     width: 2.3em;
 }
@@ -222,4 +217,288 @@ nav h1 {
 .list-play-pause.amplitude-paused {
     background-image: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/small-play.svg");
     background-size: 5em 5.5em;
+}
+
+/* Player Styles */
+#player-screen {
+    color: #fff;
+}
+
+/* Player Header Styles */
+.player-header {
+    background-color: #141920;
+    font-size: 1.5em;
+    padding: .5em;
+    height: 4.5em;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-header h2 {
+    font-size: 2em
+}
+
+.player-header img {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+.player-header #player-header-empty-flex {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+/* Player Top Styles */
+#player-top {
+    position: relative;
+}
+
+#player-top img[data-amplitude-song-info="cover_art_url"] {
+    width: 100%;
+    height: 370px;
+}
+
+/* Player Progress Bar Styles */
+#player-progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: relative;
+    margin-top: -6px;
+}
+
+progress #song-played-progress {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+progress #song-played-progress[value]::-webkit-progress-bar {
+    background: none;
+}
+
+progress #song-played-progress[value]::-webkit-progress-value {
+    background: white;
+}
+
+progress #song-played-progress[value]::-moz-progress-bar {
+    background: white;
+}
+
+progress #song-buffered-progress {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    border: none;
+    background: transparent;
+}
+
+progress #song-buffered-progress[value]::-webkit-progress-bar {
+    background: none;
+}
+
+progress #song-buffered-progress[value]::-webkit-progress-value {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: width 0.1s ease;
+}
+
+progress #song-buffered-progress[value]::-moz-progress-bar {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Player Middle Styles */
+#player-middle {
+    background-color: #000;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#player-middle div#time-container {
+    color: white;
+    width: 100%;
+    background-color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Player Bottom Styles */
+#player-bottom {
+    background-color: #192029;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#player-bottom div#control-container {
+    height: 6em;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    border: 1px solid pink;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Shuffle Styles */
+#player-bottom div#control-container div#shuffle-container {
+    height: 4.5em;
+    flex-basis: 4em;
+}
+
+#player-bottom div#control-container div#shuffle-container div#shuffle {
+    width: 4em;
+    height: 4.5em;
+    margin: auto;
+    opacity: 0.7;
+}
+
+#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-off {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle.svg");
+    background-repeat: no-repeat;
+    background-size: 4em 4.5em;
+}
+
+#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-off:hover {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle-on.svg");
+    background-repeat: no-repeat;
+    background-size: 4em 4.5em;
+    opacity: 0.8;
+}
+
+#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-on {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle-on.svg");
+    background-repeat: no-repeat;
+    background-size: 4em 4.5em;
+    opacity: 1;
+}
+
+#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-on:hover {
+    opacity: 1;
+}
+
+/* Previous Styles */
+#player-bottom div#control-container div#prev-container {
+    width: 20%;
+    float: left;
+    height: 5em;
+    padding-top: 18px;
+    border: 1px solid red;
+}
+
+#player-bottom div#control-container div#prev-container div#previous {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/previous.svg");
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+#player-bottom div#control-container div#prev-container div#previous:hover {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/previous-hover.svg");
+}
+
+/* Play/Pause Styles */
+#player-bottom div#control-container div#play-pause-container {
+    width: 20%;
+    float: left;
+    height: 5em;
+    border: 1px solid blue;
+}
+
+#player-bottom div#control-container div#play-pause-container div#play-pause {
+    width: 60px;
+    height: 5em;
+    margin: auto;
+}
+
+#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-playing {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/pause.svg");
+    background-repeat: no-repeat;
+}
+
+#player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-paused {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/play.svg");
+    background-repeat: no-repeat;
+}
+
+/* Next Styles */
+#player-bottom div#control-container div#next-container {
+    width: 20%;
+    float: left;
+    height: 5em;
+    padding-top: 18px;
+    border: 1px solid yellow;
+}
+
+#player-bottom div#control-container div#next-container div#next {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/next.svg");
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+#player-bottom div#control-container div#next-container div#next:hover {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/next-hover.svg");
+}
+
+/* Repeat Styles */
+#player-bottom div#control-container div#repeat-container {
+    height: 4.5em;
+    flex-basis: 4em;
+    border: 1px solid orange;
+}
+
+#player-bottom div#control-container div#repeat-container div#repeat {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/repeat.svg");
+    background-repeat: no-repeat;
+    background-size: 4em 4.5em;
+    width: 4em;
+    height: 4.5em;
+    margin: auto;
+    opacity: 0.7;
+}
+
+#player-bottom div#control-container div#repeat-container div#repeat:hover {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/repeat-on.svg");
+    background-size: 4em 4.5em;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+#player-bottom div#control-container div#repeat-container div#repeat.amplitude-repeat-on {
+    background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/repeat-on.svg");
+    background-size: 4em 4.5em;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+#player-bottom div#control-container div#repeat-container div#repeat.amplitude-repeat-on:hover {
+    opacity: 1;
 }
