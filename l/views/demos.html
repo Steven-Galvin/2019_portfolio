@@ -22,13 +22,13 @@ Date Modified: 07/29/19 -->
   <nav>
     <h1>Beats and Demos</h1>
     <div id="select-playlist-menu">
-      <img id="hamburger-menu" src="../assets/images/menu.svg">
+      <img id="hamburger-menu" src="../assets/images/svgs/menu.svg">
     </div>
   </nav>
   <div id="flat-black-player-container">
     <div id="list-screen" class="slide-in-top">
       <div id="list-screen-header" class="hide-playlist">
-        <img id="up-arrow" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/up.svg" />
+        <img id="up-arrow" src="../assets/images/svgs/up.svg" />
         <h2>Hide Playlist</h2>
         <div id="list-header-empty-flex">
 
@@ -39,7 +39,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
           <span class="song-number-now-playing">
             <span class="number">1</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -54,7 +54,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
           <span class="song-number-now-playing">
             <span class="number">2</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -69,7 +69,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
           <span class="song-number-now-playing">
             <span class="number">3</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -84,7 +84,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
           <span class="song-number-now-playing">
             <span class="number">4</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -99,7 +99,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
           <span class="song-number-now-playing">
             <span class="number">5</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -114,7 +114,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
           <span class="song-number-now-playing">
             <span class="number">6</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -129,7 +129,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
           <span class="song-number-now-playing">
             <span class="number">7</span>
-            <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg" />
+            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -153,18 +153,18 @@ Date Modified: 07/29/19 -->
         </div>
         <div class="list-controls">
           <div class="list-previous amplitude-prev">
-            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/small-previous.svg" alt="Previous Song">
+            <img src="../assets/images/svgs/small_previous.svg" alt="Previous Song">
           </div>
           <div class="list-play-pause amplitude-play-pause"></div>
           <div class="list-next amplitude-next">
-            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/small-next.svg" alt="Next Song">
+            <img src="../assets/images/svgs/small_next.svg" alt="Next Song">
           </div>
         </div>
       </div>
     </div>
     <div id="player-screen">
       <div class="player-header down-header">
-        <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg" />
+        <img id="down" src="../assets/images/svgs/down.svg" />
         <h2>Show Playlist</h2>
         <div id="player-header-empty-flex">
 
@@ -183,7 +183,7 @@ Date Modified: 07/29/19 -->
           <span class="amplitude-duration-time time-container"></span>
         </div>
         <div id="meta-container">
-          <span data-amplitude-song-info="name" class="song-name"></span>
+          <span data-amplitude-song-info="name" class="song-name player-screen-song-name"></span>
 
           <div class="song-artist-album">
             <span data-amplitude-song-info="artist"></span>
@@ -197,16 +197,18 @@ Date Modified: 07/29/19 -->
             <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
           </div>
 
-          <div id="prev-container">
-            <div class="amplitude-prev" id="previous"></div>
-          </div>
+          <div id="player-screen-main-control-container">
+            <div id="prev-container">
+              <div class="amplitude-prev" id="previous"></div>
+            </div>
 
-          <div id="play-pause-container">
-            <div class="amplitude-play-pause" id="play-pause"></div>
-          </div>
+            <div id="play-pause-container">
+              <div class="amplitude-play-pause" id="play-pause"></div>
+            </div>
 
-          <div id="next-container">
-            <div class="amplitude-next" id="next"></div>
+            <div id="next-container">
+              <div class="amplitude-next" id="next"></div>
+            </div>
           </div>
 
           <div id="repeat-container">
@@ -216,7 +218,7 @@ Date Modified: 07/29/19 -->
         </div>
 
         <div id="volume-container">
-          <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/volume.svg" /><input type="range" class="amplitude-volume-slider" step=".1" />
+          <img src="../assets/images/svgs/volume.svg" /><input type="range" class="amplitude-volume-slider" step=".1" />
         </div>
       </div>
     </div>
