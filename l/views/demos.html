@@ -4,10 +4,11 @@ Filename: demos.html
 Date Modified: 07/29/19 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Demos & Beats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -40,7 +41,7 @@ Date Modified: 07/29/19 -->
   <div id="flat-black-player-container">
     <div id="list-screen" class="slide-in-top">
       <div id="list-screen-header" class="hide-playlist">
-        <img id="up-arrow" src="../assets/images/svgs/up.svg" />
+        <img id="up-arrow" src="../assets/images/svgs/up.svg" alt="Hide Playlist Icon" />
         <h2>Hide Playlist</h2>
         <div id="list-header-empty-flex">
 
@@ -51,7 +52,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
           <span class="song-number-now-playing">
             <span class="number">1</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -66,7 +67,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
           <span class="song-number-now-playing">
             <span class="number">2</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -81,7 +82,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
           <span class="song-number-now-playing">
             <span class="number">3</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -96,7 +97,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
           <span class="song-number-now-playing">
             <span class="number">4</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -111,7 +112,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
           <span class="song-number-now-playing">
             <span class="number">5</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -126,7 +127,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
           <span class="song-number-now-playing">
             <span class="number">6</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -141,7 +142,7 @@ Date Modified: 07/29/19 -->
         <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
           <span class="song-number-now-playing">
             <span class="number">7</span>
-            <img class="now-playing" src="../assets/images/svgs/now_playing.svg" />
+            <img class="now-playing" alt="Now Playing Icon" src="../assets/images/svgs/now_playing.svg" />
           </span>
 
           <div class="song-meta-container">
@@ -176,14 +177,14 @@ Date Modified: 07/29/19 -->
     </div>
     <div id="player-screen">
       <div class="player-header down-header">
-        <img id="down" src="../assets/images/svgs/down.svg" />
+        <img id="down" src="../assets/images/svgs/down.svg" alt="Show Playlist Icon" />
         <h2>Show Playlist</h2>
         <div id="player-header-empty-flex">
 
         </div>
       </div>
       <div id="player-top">
-        <img data-amplitude-song-info="cover_art_url" />
+        <img data-amplitude-song-info="cover_art_url" alt="Album Cover" />
       </div>
       <div id="player-progress-bar-container">
         <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
@@ -230,7 +231,7 @@ Date Modified: 07/29/19 -->
         </div>
 
         <div id="volume-container">
-          <img src="../assets/images/svgs/volume.svg" /><input type="range" class="amplitude-volume-slider" step=".1" />
+          <img src="../assets/images/svgs/volume.svg" alt="Volume Control Icon" /><input type="range" class="amplitude-volume-slider" step=".1" />
         </div>
       </div>
     </div>

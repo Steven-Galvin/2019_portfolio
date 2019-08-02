@@ -1,6 +1,8 @@
 {
     "name": "Demos & Beats",
     "short_name": "Demos & Beats",
+    "start_url": "demos.html?utm_source=homescreen",
+    "scope" : "./",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

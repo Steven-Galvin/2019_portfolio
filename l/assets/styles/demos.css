@@ -32,8 +32,8 @@ nav {
     padding: .5em;
     color: #fffdf9;
     background-color: #171717;
-    font-size: 1.5em;
-    height: 6em;
+    font-size: 1em;
+    height: 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +41,7 @@ nav {
 
 nav h1 {
     margin: 0;
-    font-size: 3.5em;
-    letter-spacing: -5px;
+    letter-spacing: .03px;
 }
 
 #select-playlist-menu, #hamburger-menu {
@@ -62,27 +61,27 @@ nav h1 {
     background-color: #192029;
     font-size: 1.5em;
     padding: .5em;
-    height: 4.5em;
+    height: 2em;
     position: relative;
     font-family: "Lato", sans-serif;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #list-screen-header h2 {
-    font-size: 2em;
+    font-size: .8em;
 }
 
 #list-screen-header img {
-    height: 2.3em;
-    width: 2.3em;
+    height: 1em;
+    width: 1em;
 }
 
 #list-screen-header #list-header-empty-flex {
-    height: 2.3em;
-    width: 2.3em;
+    height: 1em;
+    width: 1em;
 }
 
 /* .list-active-song-name {
@@ -97,7 +96,7 @@ nav h1 {
 }
 
 .song {
-    font-size: 1.5em;
+    font-size: .8em;
     padding: 0.5em 2em;
     background-color: #242b33;
     margin-bottom: .3em;
@@ -248,27 +247,27 @@ nav h1 {
     background-color: #192029;
     font-size: 1.5em;
     padding: .5em;
-    height: 4.5em;
+    height: 2em;
     position: relative;
     font-family: "Lato", sans-serif;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .player-header h2 {
-    font-size: 2em
+    font-size: .8em
 }
 
 .player-header img {
-    height: 2.3em;
-    width: 2.3em;
+    height: 1em;
+    width: 1em;
 }
 
 .player-header #player-header-empty-flex {
-    height: 2.3em;
-    width: 2.3em;
+    height: 1em;
+    width: 1em;
 }
 
 /* Player Top Styles */
