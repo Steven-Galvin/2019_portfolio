@@ -287,18 +287,17 @@ nav h1 {
 /* Player Progress Bar Styles */
 #player-progress-bar-container {
     width: 100%;
-    height: 4px;
+    height: 2em;
     background-color: #171717;
     position: relative;
     margin-top: -6px;
 }
 
-progress #song-played-progress {
+progress#song-played-progress {
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    height: 4px;
     display: block;
     position: absolute;
     top: 0;
@@ -310,24 +309,23 @@ progress #song-played-progress {
     background: transparent;
 }
 
-progress #song-played-progress[value]::-webkit-progress-bar {
+progress#song-played-progress[value]::-webkit-progress-bar {
     background: none;
 }
 
-progress #song-played-progress[value]::-webkit-progress-value {
+progress#song-played-progress[value]::-webkit-progress-value {
     background: #fffdf9;
 }
 
-progress #song-played-progress[value]::-moz-progress-bar {
+progress#song-played-progress[value]::-moz-progress-bar {
     background: #fffdf9;
 }
 
-progress #song-buffered-progress {
+progress#song-buffered-progress {
     width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    height: 4px;
     display: block;
     position: absolute;
     top: 0;
@@ -339,11 +337,11 @@ progress #song-buffered-progress {
     background: transparent;
 }
 
-progress #song-buffered-progress[value]::-webkit-progress-bar {
+progress#song-buffered-progress[value]::-webkit-progress-bar {
     background: none;
 }
 
-progress #song-buffered-progress[value]::-webkit-progress-value {
+progress#song-buffered-progress[value]::-webkit-progress-value {
     background-color: rgba(255, 253, 249, 0.5);
     transition: width 0.1s ease;
 }
@@ -354,11 +352,9 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 
 /* Player Middle Styles */
 #player-middle {
+    font-size: 1.5em;
     background-color: #171717;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1.5em .5em;
     text-align: center;
     position: relative;
 }
@@ -367,12 +363,23 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
     color: #fffdf9;
     width: 100%;
     background-color: #171717;
-    font-size: 14px;
+    font-size: 1.3em;
     font-weight: bold;
+    height: 1em;
+    letter-spacing: 1.7px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .player-screen-song-name {
     color: #fffdf9;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.player-screen-artist {
+    letter-spacing: 0.5px;
+    font-size: 1.2em;
 }
 
 /* Player Bottom Styles */
@@ -517,6 +524,7 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 #player-bottom div#volume-container {
     text-align: center;
     padding-bottom: 20px;
+    display: none;
 }
 
 #player-bottom div#volume-container img {

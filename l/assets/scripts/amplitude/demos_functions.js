@@ -1,6 +1,6 @@
 // Project: Personal Music
 // Programmer: Steven Galvin
-// Filename: demos_init.html
+// Filename: demos_functions.html
 // Date Modified: 07/29/19
 
 window.onkeydown = function(e) {
@@ -35,8 +35,16 @@ document.getElementsByClassName('hide-playlist')[0].addEventListener('click', fu
 document.getElementById('song-played-progress').addEventListener('click', function( e ){
   var offset = this.getBoundingClientRect();
   var x = e.pageX - offset.left;
+  var test = ( parseFloat( x ) / parseFloat( this.offsetWidth ) ) * 100;
 
   Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+  alert(Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 ));
 });
 
 document.querySelector('img[data-amplitude-song-info="cover_art_url"]').style.height = document.querySelector('img[data-amplitude-song-info="cover_art_url"]').offsetWidth + 'px';
+
+// Handles a click on the navigation menu
+
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+    alert('works!')
+});
