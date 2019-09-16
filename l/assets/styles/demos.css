@@ -52,6 +52,12 @@ nav h1 {
 /* List Container Styles */
 #list-screen {
     background-color: #192029;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
     display: none;
     color: #fffdf9;
 }
@@ -170,6 +176,7 @@ nav h1 {
     font-family: 'Lato', sans-serif;
     font-size: 1.4em;
     color: #fffdf9;
+    padding-left: .5em;
     letter-spacing: 0.5px;
     flex-basis: 1.2em;
     line-height: 1.4em;
@@ -179,62 +186,75 @@ nav h1 {
 
 /* List Footer Styles */
 #list-screen-footer {
-    height: 8em;
-    padding: 2em;
+    height: 4em;
+    padding: 1em;
     display: flex;
 }
 
 #list-screen-meta-container {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5em 0;
+    padding-right: .5em;
 }
 
 #list-screen-meta-container span.song-name {
     font-family: "Lato", sans-serif;
-    font-size: 2.2em;
+    font-size: 1.3em;
     color: #fffdf9;
     letter-spacing: 0.5px;
-    line-height: 2.2em;
+    line-height: 1.3em;
+    width: 9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #list-screen-meta-container div.song-artist-album {
     opacity: 0.5;
     font-family: "Lato", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.1em;
     color: #fffdf9;
     letter-spacing: 0.5px;
-    line-height: 1.8em;
+    line-height: 1.1em;
+    width: 9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .list-controls {
-    flex-basis: 20em;
+    flex-basis: 10em;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .list-previous img {
-    width: 4em;
-    height: 4.5em;
+    width: 2em;
+    height: 2.5em;
 }
 
 .list-next img {
-    width: 4em;
-    height: 4.5em;
+    width: 2em;
+    height: 2.5em;
 }
 
 .list-play-pause {
-    width: 5em;
-    height: 5.5em;
+    width: 3em;
+    height: 3.5em;
 }
 
 .list-play-pause.amplitude-playing {
     background-image: url("../images/svgs/small_pause.svg");
-    background-size: 5em 5.5em;
+    background-size: 3em 3.5em;
 }
 
 .list-play-pause.amplitude-paused {
     background-image: url("../images/svgs/small_play.svg");
-    background-size: 5em 5.5em;
+    background-size: 3em 3.5em;
 }
 
 /* Player Styles */
@@ -274,22 +294,24 @@ nav h1 {
 #player-top {
     background-color: #171717;
     position: relative;
-    padding: 3em;
+    padding: 1em;
 }
 
 #player-top img[data-amplitude-song-info="cover_art_url"] {
     width: 100%;
     height: calc(100vw * 1);
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
 /* Player Progress Bar Styles */
 #player-progress-bar-container {
     width: 100%;
-    height: 2em;
+    height: 1em;
     background-color: #171717;
     position: relative;
     margin-top: -6px;
+    margin-bottom: .5em;
 }
 
 progress#song-played-progress {
@@ -353,7 +375,7 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 #player-middle {
     font-size: 1.5em;
     background-color: #171717;
-    padding: 1.5em .5em;
+    padding: 0 .5em;
     text-align: center;
     position: relative;
 }
@@ -362,7 +384,7 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
     color: #fffdf9;
     width: 100%;
     background-color: #171717;
-    font-size: 1.3em;
+    font-size: .65em;
     font-weight: bold;
     height: 1em;
     letter-spacing: 1.7px;
@@ -370,15 +392,19 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
     justify-content: space-between;
 }
 
+#meta-container {
+    margin: 1.5em 0;
+}
+
 .player-screen-song-name {
     color: #fffdf9;
-    font-size: 2em;
+    font-size: 1em;
     letter-spacing: 2px;
 }
 
 .player-screen-artist {
     letter-spacing: 0.5px;
-    font-size: 1.2em;
+    font-size: .9em;
 }
 
 /* Player Bottom Styles */
@@ -389,7 +415,7 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 }
 
 #player-bottom div#control-container {
-    height: 7em;
+    height: 4em;
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
@@ -400,6 +426,7 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 #player-bottom #player-screen-main-control-container {
     flex-grow: 1;
     max-width: 30em;
+    padding: 0 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -407,13 +434,13 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 
 /* Shuffle Styles */
 #player-bottom div#control-container div#shuffle-container {
-    height: 3.5em;
-    flex-basis: 3em;
+    height: 2.5em;
+    flex-basis: 2em;
 }
 
 #player-bottom div#control-container div#shuffle-container div#shuffle {
-    width: 3em;
-    height: 3.5em;
+    width: 2em;
+    height: 2.5em;
     margin: auto;
     opacity: 0.7;
 }
@@ -421,13 +448,13 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 #player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-off {
     background: url("../images/svgs/shuffle.svg");
     background-repeat: no-repeat;
-    background-size: 3em 3.5em;
+    background-size: 2em 2.5em;
 }
 
 #player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-on {
     background: url("../images/svgs/shuffle_on.svg");
     background-repeat: no-repeat;
-    background-size: 3em 3.5em;
+    background-size: 2em 2.5em;
     opacity: 1;
 }
 
@@ -437,84 +464,84 @@ progress #song-buffered-progress[value]::-moz-progress-bar {
 
 /* Previous Styles */
 #player-bottom div#control-container div#prev-container {
-    flex-basis: 5em;
-    height: 5em;
+    flex-basis: 2.5em;
+    height: 2.5em;
 }
 
 #player-bottom div#control-container div#prev-container div#previous {
     background: url("../images/svgs/previous.svg");
     background-repeat: no-repeat;
-    background-size: 5em 5em;
-    height: 5em;
-    width: 5em;
+    background-size: 2.5em 2.5em;
+    height: 2.5em;
+    width: 2.5em;
     margin: auto;
 }
 
 /* Play/Pause Styles */
 #player-bottom div#control-container div#play-pause-container {
-    flex-basis: 8em;
-    height: 8em;
+    flex-basis: 4.5em;
+    height: 4.5em;
 }
 
 #player-bottom div#control-container div#play-pause-container div#play-pause {
-    width: 8em;
-    height: 8em;
+    width: 4.5em;
+    height: 4.5em;
     margin: auto;
 }
 
 #player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-playing {
     background: url("../images/svgs/pause.svg");
     background-repeat: no-repeat;
-    background-size: 8em 8em;
+    background-size: 4.5em 4.5em;
 }
 
 #player-bottom div#control-container div#play-pause-container div#play-pause.amplitude-paused {
     background: url("../images/svgs/play.svg");
     background-repeat: no-repeat;
-    background-size: 8em 8em;
+    background-size: 4.5em 4.5em;
 }
 
 /* Next Styles */
 #player-bottom div#control-container div#next-container {
-    width: 5em;
-    height: 5em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 #player-bottom div#control-container div#next-container div#next {
     background: url("../images/svgs/next.svg");
     background-repeat: no-repeat;
-    background-size: 5em 5em;
-    height: 5em;
-    width: 5em;
+    background-size: 2.5em 2.5em;
+    height: 2.5em;
+    width: 2.5em;
     margin: auto;
 }
 
 /* Repeat Styles */
 #player-bottom div#control-container div#repeat-container {
-    height: 3.5em;
-    flex-basis: 3em;
+    height: 2.5em;
+    flex-basis: 2em;
 }
 
 #player-bottom div#control-container div#repeat-container div#repeat {
     background: url("../images/svgs/repeat.svg");
     background-repeat: no-repeat;
-    background-size: 3em 3.5em;
-    width: 3em;
-    height: 3.5em;
+    background-size: 2em 2.5em;
+    width: 2em;
+    height: 2.5em;
     margin: auto;
     opacity: 0.7;
 }
 
 #player-bottom div#control-container div#repeat-container div#repeat:hover {
     background: url("../images/svgs/repeat_on.svg");
-    background-size: 3em 3.5em;
+    background-size: 2em 2.5em;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
 
 #player-bottom div#control-container div#repeat-container div#repeat.amplitude-repeat-on {
     background: url("../images/svgs/repeat_on.svg");
-    background-size: 3em 3.5em;
+    background-size: 2em 2.5em;
     background-repeat: no-repeat;
     opacity: 1;
 }
