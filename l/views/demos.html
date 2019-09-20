@@ -11,13 +11,16 @@ Date Modified: 07/29/19 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5277b0">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#fffdf9">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#da532c">
+  <meta name="apple-mobile-web-app-title" content="Beats and Demos">
+  <meta name="application-name" content="Beats and Demos">
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#df9782">
 
   <!-- Include font -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
@@ -234,6 +237,16 @@ Date Modified: 07/29/19 -->
       </div>
     </div>
   </div>
+
+  <!-- UpUP Scripts -->
+
+  <script src="upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'offline.html',
+      'assets': ['css/bootstrap.min.css', 'css/offline.css']
+    });
+  </script>
 
 </body>
 
